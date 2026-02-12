@@ -1,3 +1,0 @@
-[submodule "cicd"]
-	path = cicd
-	url = git@github.com:Chitharasan/cicd.git
