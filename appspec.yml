@@ -5,7 +5,7 @@
 			"TargetService": {
 				"Type": "AWS::ECS::Service",
 				"Properties": {
-					"TaskDefinition": "<TASK_DEFINITION>",
+					"TaskDefinition": <TASK_DEFINITION>,
 					"LoadBalancerInfo": {
 						"ContainerName": "test-repo-dev",
 						"ContainerPort": 80
