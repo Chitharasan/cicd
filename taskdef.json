@@ -10,8 +10,8 @@
     "requiresCompatibilities": [
         "FARGATE"
     ],
-    "memory": "CPU",
-    "cpu": "MEMORY",
+    "memory": "MEMORY",
+    "cpu": "CPU",
     "runtimePlatform": {
         "operatingSystemFamily": "LINUX",
         "cpuArchitecture": null
