@@ -1,0 +1,48 @@
+{
+    "family": "CONTAINER_NAME",
+    "taskRoleArn": "arn:aws:iam::ACCOUNT_NO:role/camplife-api-ecs-task-role", 
+    "executionRoleArn": "arn:aws:iam::ACCOUNT_NO:role/ecsTaskExecutionRole",
+    "networkMode": "awsvpc",
+    "compatibilities": [
+        "EC2",
+        "FARGATE"
+    ],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "memory": "CPU",
+    "cpu": "MEMORY",
+    "runtimePlatform": {
+        "operatingSystemFamily": "LINUX",
+        "cpuArchitecture": null
+    },
+    "containerDefinitions": [
+        {
+            "name": "CONTAINER_NAME",
+            "image": "CAMPLIFE_API_IMAGE",
+            "portMappings": [
+                {
+                    "containerPort": 80,
+                    "hostPort": 80,
+                    "protocol": "tcp"  
+                }
+            ],
+            "essential": true,
+            "environment": [
+                {
+                    "name": "LOG_CHANNEL",
+                    "value": "errorlog"
+                }
+            ],
+            "logConfiguration": {
+                "logDriver": "awslogs",
+                "options": {
+                    "awslogs-group": "/ecs/CONTAINER_NAME", 
+                    "awslogs-region": "LOG_REGION",
+                    "awslogs-stream-prefix": "ecs"
+                }
+            },
+            "healthCheck": null
+        }
+    ]
+}
