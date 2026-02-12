@@ -19,7 +19,7 @@
     "containerDefinitions": [
         {
             "name": "CONTAINER_NAME",
-            "image": "CAMPLIFE_API_IMAGE",
+            "image": "<IMAGE1_NAME>",
             "portMappings": [
                 {
                     "containerPort": 80,
