@@ -5,9 +5,9 @@
 			"TargetService": {
 				"Type": "AWS::ECS::Service",
 				"Properties": {
-					"TaskDefinition": "camplife-api-dev",
+					"TaskDefinition": "test-repo-dev",
 					"LoadBalancerInfo": {
-						"ContainerName": "camplife-test1",
+						"ContainerName": "test-repo-dev",
 						"ContainerPort": 80
 					}
 				}
