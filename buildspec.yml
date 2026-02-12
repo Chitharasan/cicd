@@ -30,7 +30,7 @@ phases:
           sed -i "s#ACCOUNT_NO#$ACCOUNT_ID#g" ./taskdef.json
           sed -i "s#REGION_NAME#$AWS_REGION#g" ./taskdef.json
           sed -i "s#CONTAINER_NAME#$ECS_REPO_NAME#g" ./taskdef.json
-          sed -i "s#CAMPLIFE_API_IMAGE#$REPOSITORY_URI:$IMAGE_TAG#g" ./taskdef.json
+          sed -i "s#CAMPLIFE_API_IMAGE#$IMAGE_TAG#g" ./taskdef.json
           sed -i "s#ENVIRONMENT#$ENV_TYPE#g" ./taskdef.json
           sed -i "s#LOG_REGION#$AWS_REGION#g" ./taskdef.json
           sed -i "s#CPU#$PROD_CPU#g" ./taskdef.json
@@ -41,7 +41,7 @@ phases:
           sed -i "s#ACCOUNT_NO#$ACCOUNT_ID#g" ./taskdef.json
           sed -i "s#REGION_NAME#$AWS_REGION#g" ./taskdef.json
           sed -i "s#CONTAINER_NAME#$ECS_REPO_NAME#g" ./taskdef.json
-          sed -i "s#CAMPLIFE_API_IMAGE#$REPOSITORY_URI:$IMAGE_TAG#g" ./taskdef.json
+          sed -i "s#CAMPLIFE_API_IMAGE#$IMAGE_TAG#g" ./taskdef.json
           sed -i "s#ENVIRONMENT#$ENV_TYPE#g" ./taskdef.json
           sed -i "s#LOG_REGION#$AWS_REGION#g" ./taskdef.json
           sed -i "s#CPU#$STAGING_CPU#g" ./taskdef.json
